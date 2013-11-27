@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity" >
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <RadioGroup
+        android:id="@+id/toggleGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/RadioButton0"
+            android:layout_width="48dp"
+            android:layout_height="42dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="G"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="48dp"
+            android:layout_height="42dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="F"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+</RelativeLayout>

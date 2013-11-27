@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="85dp"
+        android:layout_height="100dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/rsz_book1" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/photo"
+        android:padding="2dp"
+        android:text="And The Mountains Echoed"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/photo"
+        android:padding="1dp"
+        android:text="Khaleed Hosseini"
+        android:textColor="#ffffff"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/author"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/photo"
+        android:padding="2dp"
+        android:text="Rs. 453"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/author"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/price2"
+        android:padding="2dp"
+        android:text="Rs. 415"
+        android:textColor="#ffff00"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price2"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/photo"
+        android:text="In Stock"
+        android:textColor="#00af28"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
